@@ -14,6 +14,8 @@
 
 @interface UploadImageViewController ()
 
+-(void)showErrorView:(NSString *)errorMsg;
+
 @end
 
 @implementation UploadImageViewController
@@ -21,6 +23,8 @@
 @synthesize imgToUpload = _imgToUpload;
 @synthesize username = _username;
 @synthesize commentTextField = _commentTextField;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
